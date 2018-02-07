@@ -52,7 +52,7 @@ public class ConfigValidator {
         for(Map.Entry<String, Boolean> entry : distribution.entrySet()){
             if(entry.getValue()){
                 currentNode = entry.getKey();
-                log.info("****************" + " Validating " + currentNode + " Node " + "****************");
+                log.info("****************---" + " Validating " + currentNode + " Node " + "--****************");
 
                 //validate current node's confs against xsd
                 for(Map.Entry<String, Document> configurationFile : configs.get(currentNode).entrySet()){
